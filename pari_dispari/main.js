@@ -41,5 +41,10 @@ function sommaDeiNumeri() {
 
 // stabiliamo chi ha vinto
 
+if (utenteSceglie = sommaDeiNumeri) {
+    console.log('hai vinto');
 
+} else {
+    console.log('hai perso');
+}
 
