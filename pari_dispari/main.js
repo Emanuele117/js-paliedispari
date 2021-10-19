@@ -10,12 +10,36 @@
 
 let numeroUtente = Number(prompt('inserisci un numero da 1 a 5'));
 
-function numeroCasuale(numeroComputer) {
+let numeroPc = numeroCasuale()
+
+function numeroCasuale() {
     numero = Math.round(Math.random() * 5);
-    return numeroComputer[numero]
+    return numero
 }
 
-let sommaNumeri = numeroUtente + numero
+
+
+let sommaNumeri = numeroUtente + numeroPc
 console.log(sommaNumeri);
+
+// stabilire con una funzione se la somma dei due numeri è pari o dispari
+
+let utenteSceglie = prompt('scegli pari o dispari')
+
+const check = sommaDeiNumeri();
+
+console.log(check);
+function sommaDeiNumeri() {
+    console.log(sommaNumeri);
+    if (sommaNumeri % 2 == 0) {
+        return 'pari'
+    } else {
+        return 'dispari'
+    }
+
+}
+
+// stabiliamo chi ha vinto
+
 
 
