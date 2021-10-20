@@ -2,11 +2,7 @@
 
 // generiamo un numero random ( sempre da 1 a 5 ) per il computer (usando una funzione). 
 
-// sommiamo i due numeri 
 
-// stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
-
-// stabiliamo chi ha vinto
 
 let numeroUtente = Number(prompt('inserisci un numero da 1 a 5'));
 
@@ -17,6 +13,7 @@ function numeroCasuale() {
     return numero
 }
 
+// sommiamo i due numeri 
 
 
 let sommaNumeri = numeroUtente + numeroPc
@@ -31,20 +28,22 @@ const check = sommaDeiNumeri();
 console.log(check);
 function sommaDeiNumeri() {
     console.log(sommaNumeri);
-    if (sommaNumeri % 2 == 0) {
-        return 'pari'
+    if (sommaNumeri % 2 == 0 && utenteSceglie == 'pari') {
+        return 'Numero pari , hai vinto!'
+    } else if (sommaNumeri % 2 != 0 && utenteSceglie == 'dispari') {
+        return 'dispari, hai vinto'
     } else {
-        return 'dispari'
+        return 'hai perso!'
     }
 
 }
 
 // stabiliamo chi ha vinto
 
-if (utenteSceglie = sommaDeiNumeri) {
+/* if (utenteSceglie = sommaDeiNumeri) {
     console.log('hai vinto');
 
 } else {
     console.log('hai perso');
 }
-
+ */
